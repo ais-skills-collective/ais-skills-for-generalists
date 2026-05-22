@@ -58,7 +58,7 @@ Translates your existing professional skills into AI safety roles you might real
 
 > *"I'm a journalist with 8 years' experience. What roles in AI safety would actually use my skills?"*
 >
-> *"I work in tech policy at a government agency. Is there a path into AI safety policy that doesn't require me to start over?"*
+> *"For someone early in their career coming from a non-AI-safety background with experience in community building, what opportunities exists in operations or field-building AI safety role'?"*
 >
 > *"Do I need to be technical to work in AI safety? If so, how technical, and what can a non-technical generalist do instead?"*
 >
