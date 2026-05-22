@@ -68,7 +68,7 @@ Translates your existing professional skills into AI safety roles you might real
 
 ### AI Safety Learning Path
 
-Helps identify a personalised upskilling plan based on your goals and current skills. The AI safety learning landscape is full of programmes — BlueDot, AI Safety, Ethics and Society, ARENA, and many more — and it's not obvious which ones fit which background, in which order, with what time commitment. The skill covers the major courses and fellowships, how to choose between them based on your goals and constraints, reading lists and sequencing, and how to make progress alongside a full-time job.
+Helps identify a personalised upskilling plan based on your goals and current skills. The AI safety learning landscape is full of programmes — BlueDot, ML4Good, ARENA, and many more — and it's not obvious which ones fit which background, in which order, with what time commitment. The skill covers the major courses and fellowships, how to choose between them based on your goals and constraints, reading lists and sequencing, and how to make progress alongside a full-time job.
 
 **Sample queries**
 
@@ -127,7 +127,7 @@ To get an update, re-download the relevant zips from the latest release and re-u
 
 See [CHANGELOG.md](CHANGELOG.md) for release history.
 
-## What to expect
+## Limitations
 
 > [!IMPORTANT]
 > **Things change fast in AI safety.** Each `SKILL.md` carries a `last-verified` date. For fast-decaying content — open fellowship windows, current funder priorities, role openings — skills instruct Claude to flag the as-of date and suggest verifying at source. The skills are most useful as a current-as-of-X baseline, not a real-time oracle.
