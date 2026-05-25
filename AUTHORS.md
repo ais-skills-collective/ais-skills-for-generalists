@@ -2,8 +2,6 @@
 
 This project was built by three collaborators, contributing equally.
 
-## Authors
-
 **Alex Borwick**
 
 **Jaspreet Singh** — [@jas9x9](https://github.com/jas9x9)
