@@ -150,7 +150,7 @@ We're not actively soliciting contributions while the suite is in early release.
 
 ## Authors
 
-Built by Alex Borwick, Jaspreet Singh, and Setayesh Arabshahi. Equal contributors. See [AUTHORS.md](AUTHORS.md).
+Built by Alex Borwick, Jaspreet Singh, and Seti Arabshahi. Equal contributors. See [AUTHORS.md](AUTHORS.md).
 
 ## License
 
