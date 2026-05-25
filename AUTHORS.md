@@ -12,7 +12,7 @@ This project was built by three collaborators, contributing equally.
 
 ## How we came together
 
-This work began during the [LISA AI Studio] 2026 cohort — a programme run by the London Initiative for Safe AI for professionals exploring AI safety. The three of us were participants in the cohort.
+This work began during the LISA AI Studio 2026 cohort — a programme run by the London Initiative for Safe AI for professionals exploring AI safety. The three of us were participants in the cohort.
 
 ## Acknowledgements
 
