@@ -1,0 +1,45 @@
+# Operating system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Temporary and scratch files
+*.tmp
+*.bak
+*.log
+*.orig
+
+# Build outputs (the release workflow will produce these, but they shouldn't be committed)
+*.zip
+dist/
+build/
+
+# Python (in case anyone uses a venv for tooling)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Node (in case any tooling is added later)
+node_modules/
+package-lock.json
+
+# Environment files
+.env
+.env.local
