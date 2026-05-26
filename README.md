@@ -30,7 +30,7 @@ These skills are aimed at exactly those questions.
 | **AI Safety Learning Paths** | Personalised guidance on courses, fellowships, and self-study | You've picked a direction and want a concrete upskilling plan |
 | **AI Safety Funding** | A guide to funding for projects, independent research, and career transitions | You have something — a project, an initiative, a transition plan — that needs financial support |
 
-*These skills are designed to work together. Most pivot journeys touch all four areas — orientation, career mapping, learning, and (often) funding. **Install all four**, even if some feel less immediately relevant. They'll come into play as your pivot progresses.*
+*These skills are designed to work together. But you can downlaod and use individual skills as needed. 
 
 ## The skills in detail
 
