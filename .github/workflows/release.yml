@@ -36,7 +36,7 @@ jobs:
           ls -lh dist/
 
       - name: Create GitHub release and attach zips
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v1
         with:
           files: dist/*.zip
           generate_release_notes: true
