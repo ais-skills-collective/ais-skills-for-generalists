@@ -1,6 +1,5 @@
 name: Release
 
-# Triggers on any tag push matching v* (e.g. v0.1.0, v1.2.3)
 on:
   push:
     tags:
@@ -10,7 +9,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Required to create releases and upload assets
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -19,10 +18,6 @@ jobs:
       - name: Build per-skill zips
         run: |
           mkdir -p dist
-
-          # cd into skills/ so each zip has a single skill folder at its root
-          # e.g. ai-safety-101/SKILL.md — not skills/ai-safety-101/SKILL.md
-          # The latter format is rejected by claude.ai on upload
           cd skills
           for skill_dir in */; do
             skill_name="${skill_dir%/}"
@@ -30,17 +25,13 @@ jobs:
             echo "✓ dist/${skill_name}.zip"
           done
           cd ..
-
-          echo ""
           echo "Built zips:"
           ls -lh dist/
 
-      - name: Create GitHub release and attach zips
-        uses: softprops/action-gh-release@v1
-        with:
-          files: dist/*.zip
-          generate_release_notes: true
-          # generate_release_notes pulls in merged PRs and commits since the
-          # last tag. For v0.1.0 (no prior tag), edit the release body manually
-          # in GitHub after it's created, or replace this with:
-          # body_path: CHANGELOG.md
+      - name: Create release and upload zips
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${{ github.ref_name }}" dist/*.zip \
+            --title "${{ github.ref_name }}" \
+            --generate-notes
