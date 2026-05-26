@@ -1,0 +1,46 @@
+name: Release
+
+# Triggers on any tag push matching v* (e.g. v0.1.0, v1.2.3)
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Required to create releases and upload assets
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build per-skill zips
+        run: |
+          mkdir -p dist
+
+          # cd into skills/ so each zip has a single skill folder at its root
+          # e.g. ai-safety-101/SKILL.md — not skills/ai-safety-101/SKILL.md
+          # The latter format is rejected by claude.ai on upload
+          cd skills
+          for skill_dir in */; do
+            skill_name="${skill_dir%/}"
+            zip -r "../dist/${skill_name}.zip" "${skill_name}/"
+            echo "✓ dist/${skill_name}.zip"
+          done
+          cd ..
+
+          echo ""
+          echo "Built zips:"
+          ls -lh dist/
+
+      - name: Create GitHub release and attach zips
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip
+          generate_release_notes: true
+          # generate_release_notes pulls in merged PRs and commits since the
+          # last tag. For v0.1.0 (no prior tag), edit the release body manually
+          # in GitHub after it's created, or replace this with:
+          # body_path: CHANGELOG.md
