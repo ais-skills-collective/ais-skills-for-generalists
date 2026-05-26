@@ -6,7 +6,7 @@ A suite of Claude skills to help generalists explore, learn about, and pivot int
 
 AI safety needs more generalists: programme managers, field-builders, operators, org leaders, chiefs of staff, founders. But the pathways for them to identify relevant opportunities, leverage existing skills, upskill, and build credentials are not well established. We've built a suite of Claude skills that combine the scattered AI safety career resources with the intelligence of Claude to help generalists find better guidance into the field. Each skill gives Claude reliable, current grounding in a different piece of the pivot puzzle — the field itself, how your skills map onto it, how to upskill, and how to fund the work. Install the skills, and Claude becomes a substantially more useful guide in your journey into AI safety.
 
-Skills follow the [Anthropic Agent Skills format](https://support.claude.com/en/articles/12512198) — folders containing a `SKILL.md` and supporting reference material that Claude loads on demand. They work in claude.ai (Free, Pro, Max, Team, and Enterprise plans), Claude Code, and via the API.
+Skills follow the [Anthropic Agent Skills format](https://support.claude.com/en/articles/12512198) — folders containing a `SKILL.md` and supporting reference material that Claude loads on demand. They work in claude.ai (Free, Pro, Max, Team, and Enterprise plans).
 
 ## Who this is for
 
@@ -96,28 +96,23 @@ Maps the funding landscape so you can find sources that fit what you're trying t
 
 ## Installation
 
-### In claude.ai
+### In claude.ai or Claude Desktop
 
 > [!NOTE]
 > **Prerequisites.** Skills work on all Claude plans, including the free tier. Before you can upload skills, you need **Code execution and file creation** enabled. Go to **Settings → Capabilities** and toggle it on. On Team or Enterprise plans, this setting may be managed by an administrator — check with them if the toggle isn't available.
 
-1. In Claude sidebar, go to **Customize → Skills**.
-2. Download the skill zips from the [latest release](https://github.com/ais-skills-collective/ais-skills-for-generalists/releases/latest):
+1. Download the skill zips from the [latest release](https://github.com/ais-skills-collective/ais-skills-for-generalists/releases/latest):
    - `ai-safety-101.zip`
    - `ai-safety-career-pathfinder.zip`
    - `ai-safety-learning-path.zip`
    - `ai-safety-funding.zip`
-3. Click **+ → Create skill** → Upload skill**, select a zip, and toggle the skill on.
+2. In Claude sidebar, go to **Customize → Skills**.
+3. Click **+ → Create skill** → Upload skill, select a skill zip folder, and toggle the skill on.
 4. Repeat for each skill you want.
 
 Claude activates the relevant skill automatically when your question is in its scope. You can also invoke a skill explicitly using the / command or prompting:
 
 > *"Use the AI Safety Career Paths skill — I'm a journalist with 8 years' experience, what roles would actually use my skills?"*
-
-### Advanced: In Claude Code
-
-For developers using Claude Code from the terminal, add this repo as a plugin marketplace:
-Then install all four skills, or pick individual ones via the marketplace UI.
 
 ## Updates and versioning
 
