@@ -2,7 +2,7 @@
 
 This project was built by three collaborators, contributing equally.
 
-**Alex Borwick**
+**Alex Borwick** - [@lexisaurus](https://github.com/lexisaurus)
 
 **Jaspreet Singh** — [@jas9x9](https://github.com/jas9x9)
 
