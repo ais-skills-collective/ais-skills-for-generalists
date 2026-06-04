@@ -102,10 +102,10 @@ Maps the funding landscape so you can find sources that fit what you're trying t
 > **Prerequisites.** Skills work on all Claude plans, including the free tier. Before you can upload skills, you need **Code execution and file creation** enabled. Go to **Settings → Capabilities** and toggle it on. On Team or Enterprise plans, this setting may be managed by an administrator — check with them if the toggle isn't available.
 
 1. Download the skill zips from the [latest release](https://github.com/ais-skills-collective/ais-skills-for-generalists/releases/latest):
-   - `ai-safety-101.zip`
-   - `ai-safety-career-pathfinder.zip`
-   - `ai-safety-learning-path.zip`
-   - `ai-safety-funding.zip`
+   - `ai-safety-101.skill`
+   - `ai-safety-career-pathfinder.skill`
+   - `ai-safety-learning-path.skill`
+   - `ai-safety-funding.skill`
 2. In Claude sidebar, go to **Customize → Skills**.
 3. Click **+ → Create skill** → Upload skill, select a skill zip folder, and toggle the skill on.
 4. Repeat for each skill you want.
