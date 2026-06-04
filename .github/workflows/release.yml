@@ -22,8 +22,8 @@ jobs:
           cd skills
           for skill_dir in */; do
             skill_name="${skill_dir%/}"
-            zip -r "../dist/${skill_name}.zip" "${skill_name}/"
-            echo "✓ dist/${skill_name}.zip"
+            zip -r "../dist/${skill_name}.skill" "${skill_name}/"
+            echo "✓ dist/${skill_name}.skill"
           done
           cd ..
           echo "Built zips:"
